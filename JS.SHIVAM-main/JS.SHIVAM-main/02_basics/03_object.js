@@ -15,9 +15,9 @@ const jsuser = {
     lastlogindays: ["Monday", "Tuesday", "Wednesday"],
 }
 
-// console.log(jsuser.age)
-// console.log(jsuser.fullname)
-// console.log(jsuser[mysym])
+ console.log(jsuser.age)
+ console.log(jsuser.fullname)
+ console.log(jsuser[mysym])
 
 
 jsuser.age = 23
