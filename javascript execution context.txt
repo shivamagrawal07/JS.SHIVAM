@@ -1,0 +1,45 @@
+                       javascript execution context
+
+{} global execution contest (((variable this))) it will execute in thread
+
+1.global execution contest
+2.function execution contest
+3.Eval  execution contest
+
+{} memory creation phase  //place allocated
+   Execution phase 
+                                            let val1 =10
+ 1. Global Execution (this)                 let val2 =5
+ 2. Memory phase                            function add num(num1,num2){
+     val1= undefined                        let total = num1 + num2
+     val2= undefined                        return total
+     addnum= definition                     }
+     result1= undefined                     let result1 = addnum(val1 , val2)
+     result2= undefined                     let result2 = addnum(10 , 2)
+
+
+3. Execution phase                   
+    val1 = 10
+    val2 = 5
+    add num = non variable environment + execution thread   // delete
+   1.(memory phase)  val1 = undefined
+                     val2 = undefined
+                     total = undefined
+   2.(Execution context) num1 = 10
+                       num2 = 5
+                      total = 15 //return to global execution context
+
+
+ New Variable Environment + Thread   //New table
+1.(memory phase)  val1 = undefined
+                     val2 = undefined
+                     total = undefined
+ 2.(Execution context) num1 = 10
+                       num2 = 5
+                      total = 15 //return to global execution context
+
+
+ 
+
+                      
+                            
