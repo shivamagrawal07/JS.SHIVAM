@@ -18,3 +18,34 @@ const temperature = 41
 //     console.log(`user power: ${power}`);
 // }
 //  console.log(`user power: ${power}`);
+
+
+// const balance = 1000
+
+// if (balance > 500) console.log("test"),console.log("test2");
+
+// if (balance < 500){
+//     console.log("less than");
+
+// } else if (balance  < 750){
+//    console.log("less than 750");
+
+// }else if (balance < 900){
+//     console.log("less than 750");
+
+// }else{
+//     console.log("less than 1200");
+// }
+
+const userLoggedIn = true
+const debitcard = true
+const LoggedInFromGoogle = false
+const LoggedInFromEmail = true
+
+if(userLoggedIn && debitcard && 2==3){
+    console.log("allow to buy course");
+}
+
+if(LoggedInFromGoogle || LoggedInFromEmail){
+   console.log("user logged in");
+}
